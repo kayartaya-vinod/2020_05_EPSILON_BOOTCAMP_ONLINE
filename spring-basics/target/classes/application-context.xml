@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- these act like instructions for Spring framework to create instances 
+		of beans -->
+
+	<!-- <bean name="jdbc-dao" class="com.epsilon.dao.JdbcContactsDao" /> -->
+
+	<bean name="csv-dao" class="com.epsilon.dao.CsvContactsDao" />
+
+	<!-- setter/property injection
+	<bean name="jdbc-dao" class="com.epsilon.dao.JdbcContactsDao">
+		<property name="driverClassName" value="org.h2.Driver" />
+		<property name="url" value="jdbc:h2:tcp://localhost/~/web-training" />
+		<property name="username" value="vinod" />
+		<property name="password" value="secret" />
+	</bean>
+	-->
+	
+	<!-- constructor based injection -->
+	<bean name="jdbc-dao" class="com.epsilon.dao.JdbcContactsDao">
+		<constructor-arg name="url" value="jdbc:h2:tcp://localhost/~/web-training" />
+		<constructor-arg name="driverClassName" value="org.h2.Driver" />
+		<constructor-arg index="3" value="secret" />
+		<constructor-arg index="2" value="vinod" />
+	</bean>
+
+	<!--  
+	<bean name="jdbc-dao" class="com.epsilon.dao.JdbcContactsDao">
+		<property name="driverClassName"
+			value="com.mysql.cj.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://localhost/epsilon_training" />
+		<property name="username" value="root" />
+		<property name="password" value="Welcome#123" />
+	</bean>
+	-->
+</beans>
