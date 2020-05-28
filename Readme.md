@@ -1,6 +1,8 @@
 # Web Basics trainig references
 
 Client: **Epsilon** <br>
+Mode: **Online**<br>
+
 
 ---
 👋🏼 Visit https://courses.vinod.co for courses @ ₹49/-
