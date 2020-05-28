@@ -24,7 +24,9 @@
 	-->
 	
 	<!-- constructor based injection -->
-	<bean name="jdbc-dao" class="com.epsilon.dao.JdbcContactsDao">
+	<bean id="jdao" name="jdbc-dao,dao,jdbcDao" 
+		scope="prototype"
+		class="com.epsilon.dao.JdbcContactsDao">
 		<constructor-arg name="url" value="jdbc:h2:tcp://localhost/~/web-training" />
 		<constructor-arg name="driverClassName" value="org.h2.Driver" />
 		<constructor-arg index="3" value="secret" />
