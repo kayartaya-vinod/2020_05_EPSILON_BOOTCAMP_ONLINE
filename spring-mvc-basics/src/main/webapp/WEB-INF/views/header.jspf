@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring MVC Demo App</title>
+<link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
+</head>
+<body>
+
+	<div class="alert alert-primary">
+		<div class="container">
+			<h1>Spring MVC Demo App</h1>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<a href="./" class="btn btn-link">Home</a> | <a href="./all-contacts"
+			class="btn btn-link">View contacts</a>
+
+	</div>
+	
+	<div class="container" style="min-height: 500px;">
+	
