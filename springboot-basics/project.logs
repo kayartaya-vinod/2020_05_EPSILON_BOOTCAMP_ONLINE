@@ -1,0 +1,31 @@
+2020-06-03 10:57:46.329  INFO 11030 --- [main] com.epsilon.Main                         : Starting Main v0.0.1-SNAPSHOT on Vinods-MacBook-Pro.local with PID 11030 (/Users/vinodkumar/Desktop/training-workspace/springboot-basics/target/springboot-basics-0.0.1-SNAPSHOT.jar started by vinodkumar in /Users/vinodkumar/Desktop/training-workspace/springboot-basics)
+2020-06-03 10:57:46.338  INFO 11030 --- [main] com.epsilon.Main                         : No active profile set, falling back to default profiles: default
+2020-06-03 10:57:49.123  INFO 11030 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-06-03 10:57:49.312  INFO 11030 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164ms. Found 1 JPA repository interfaces.
+2020-06-03 10:57:52.605  INFO 11030 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7777 (http)
+2020-06-03 10:57:52.643  INFO 11030 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-03 10:57:52.645  INFO 11030 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-03 10:57:52.906  INFO 11030 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-03 10:57:52.906  INFO 11030 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6302 ms
+2020-06-03 10:57:54.733  INFO 11030 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-03 10:57:55.951  INFO 11030 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-03 10:57:56.543  INFO 11030 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-03 10:57:57.225  INFO 11030 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-03 10:57:57.446  INFO 11030 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-03 10:57:57.663  INFO 11030 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-06-03 10:58:00.224  INFO 11030 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-03 10:58:00.253  INFO 11030 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-03 10:58:00.297  INFO 11030 --- [main] com.epsilon.resources.ContactsResource   : dao is  null
+2020-06-03 10:58:02.465  INFO 11030 --- [main] com.epsilon.resources.ContactsResource   : dao is an instanceof: com.sun.proxy.$Proxy98
+2020-06-03 10:58:02.698  WARN 11030 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-03 10:58:03.338  INFO 11030 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-03 10:58:04.859  INFO 11030 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-06-03 10:58:05.174  INFO 11030 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7777 (http) with context path ''
+2020-06-03 10:58:05.305  INFO 11030 --- [main] com.epsilon.Main                         : Started Main in 20.744 seconds (JVM running for 22.142)
+2020-06-03 10:58:29.793  INFO 11030 --- [http-nio-7777-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-03 10:58:29.797  INFO 11030 --- [http-nio-7777-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-03 10:58:30.074  INFO 11030 --- [http-nio-7777-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 274 ms
+2020-06-03 11:27:15.899  INFO 11030 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-03 11:27:15.901  INFO 11030 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-03 11:27:15.907  INFO 11030 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-03 11:27:15.925  INFO 11030 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

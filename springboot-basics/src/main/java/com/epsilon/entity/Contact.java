@@ -9,14 +9,17 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name="contacts")
+@Table(name = "contacts")
 @Data
 public class Contact {
 	@Id
+	// @GeneratedValue(generator = "increment")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String name;
 	private String city;
 	private String email;
 	private String phone;
+	private String gender;
+
 }
